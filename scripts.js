@@ -31,6 +31,7 @@ console.log("hello".toLocaleUpperCase())        // 'HELLO' (string in uppercase 
 
 // JS Array Methods
 console.log([4, 5, 6, 7].at(1))                                   // at() does not exist, so this will throw an error
+console.log([4, 5, 6, 7][1])                                      // 5 (the element at index 1)
 console.log([4, 5, 6, 7].push(8))                                 // 5 (length of the array after adding 8)
 console.log([4, 5, 6, 7].pop())                                   // 7 (the removed element)
 console.log([4, 5, 6, 7].fill(1))                                 // [1, 1, 1, 1] (the modified array)
@@ -40,7 +41,7 @@ console.log([4, 5, 6, 7].sort())                                  // [4, 5, 6, 7
 console.log([4, 5, 6, 7].toString())                              // "4,5,6,7" (a comma-separated string representation of the array)
 console.log([4, 5, 6, 7].concat(8))                               // [4, 5, 6, 7, 8] (a new array containing the elements of the original array followed by 8)
 console.log([4, 5, 6, 7].splice(1, 2))                            // [5, 6] (the removed elements)
-console.log([4, 5, 6, 7].forEach(item => console.log(item)))      // undefined (forEach does not return a value)
+console.log([4, 5, 6, 7].forEach(item => console.log(item)))      // undefined (forEach does not return a value it just iterates over each element of the array and applies the provided function)
 console.log([4, 5, 6, 7].some(item => item > 5))                  // true (at least one element in the array satisfies the condition)
 console.log([4, [5, 6], 7].flat())                                // [4, 5, 6, 7] (a new array with any sub-array elements concatenated into it)
 console.log([4, 5, 6, 7].length)                                  // 4 (the number of elements in the array)
